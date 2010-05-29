@@ -5,12 +5,9 @@ import static org.junit.Assert.assertTrue;
 
 import com.mycompany.test.pageObjects.HomePage;
 import com.mycompany.test.pageObjects.WebSite;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import cuke4duke.Given;
-import cuke4duke.Then;
-import cuke4duke.When;
+import cuke4duke.annotation.I18n.EN.*;
 import cuke4duke.spring.StepDefinitions;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @StepDefinitions
 public class HelloWorldSteps {
