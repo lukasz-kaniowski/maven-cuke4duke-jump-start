@@ -29,7 +29,7 @@ should see the following as amongst the last lines of the Maven output:
 [INFO] Total time: 8 seconds
 
 *NOTE* When building the maven project for the first time there is a *LOT* of
-cuke4duke dependencies downloaded, but just the first time. It takes a while, but only
+cuke4duke dependencies downloaded, but just the first time. It takes a while
 the first time.  And now the weird part, if on the first run the Cucumber steps fail,
 run 'mvn clean integration-test' again. This also only has to be done once.
 
@@ -40,3 +40,5 @@ valid profiles. For example, the following will run the test using HtmlUnit.
 mvn clean integration-test -P htmlunit
 
 If you have any feedback, please email me: james underscore ladd at hotmail dot com.
+
+*end*
