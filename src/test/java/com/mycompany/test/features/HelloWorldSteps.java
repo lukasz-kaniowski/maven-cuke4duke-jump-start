@@ -17,16 +17,27 @@ public class HelloWorldSteps {
 
 	@Given("I have a skeleton web application")
 	public void haveSkeletonWebApplication() {
+        sleep();
 		assertNotNull(webSite);
 	}
 
-	@When("I open the home page")
+    @When("I open the home page")
 	public void openHomePage() {
+        sleep();
 		homePage = webSite.openHomePage();
 	}
 
 	@Then("the page heading should be \"(.*)\"")
 	public void shouldHavePageHeading(String expectedTitle) {
+        sleep();
 		assertTrue(homePage.hasPageHeading(expectedTitle));
 	}
+
+    private void sleep() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
 }
